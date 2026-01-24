@@ -2,6 +2,7 @@ import 'package:e_commerce_app_ui/controllers/auth_controller.dart';
 import 'package:e_commerce_app_ui/utils/app_textst.dart';
 import 'package:e_commerce_app_ui/view/main_screen.dart';
 import 'package:e_commerce_app_ui/view/widgets/custom_textfiled.dart';
+import 'package:e_commerce_app_ui/view/widgets/forget_password_secreen.dart';
 import 'package:e_commerce_app_ui/view/widgets/signup_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
@@ -80,7 +81,7 @@ class SigninScreen extends StatelessWidget {
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () => Get.off(() => ForgetPasswordScreen()),
                   child: Text(
                     "forget password?",
                     style: AppTextst.withColor(
@@ -127,7 +128,7 @@ class SigninScreen extends StatelessWidget {
                     ),
                   ),
                   TextButton(
-                    onPressed: () => Get.to(() => const SignupScreen()),
+                    onPressed: () => Get.to(() => SignupScreen()),
                     child: Text(
                       "Sign Up",
                       style: AppTextst.withColor(
