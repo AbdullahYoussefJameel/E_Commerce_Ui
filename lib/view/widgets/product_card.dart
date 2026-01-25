@@ -90,6 +90,7 @@ class productCard extends StatelessWidget {
           //product details
           Padding(
             padding: EdgeInsets.all(screenWidth * 0.02),
+
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
