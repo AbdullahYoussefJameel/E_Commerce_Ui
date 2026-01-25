@@ -6,7 +6,6 @@ import 'package:e_commerce_app_ui/view/widgets/forget_password_secreen.dart';
 import 'package:e_commerce_app_ui/view/widgets/signup_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:get/instance_manager.dart';
 import 'package:get/utils.dart';
 

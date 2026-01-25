@@ -4,16 +4,12 @@ import 'package:e_commerce_app_ui/view/widgets/custom_textfiled.dart';
 import 'package:e_commerce_app_ui/view/widgets/signin_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/get_core.dart';
-import 'package:get/get_navigation/get_navigation.dart';
 
 class SignupScreen extends StatelessWidget {
   SignupScreen({super.key});
   final TextEditingController _nameController = TextEditingController();
   final TextEditingController _emailcontroller = TextEditingController();
   final TextEditingController _passwordcontroller = TextEditingController();
-  final TextEditingController _confirmPasswordController =
-      TextEditingController();
 
   @override
   Widget build(BuildContext context) {

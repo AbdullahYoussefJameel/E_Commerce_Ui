@@ -7,8 +7,6 @@ class ForgetPasswordScreen extends StatelessWidget {
   ForgetPasswordScreen({super.key});
   final TextEditingController _emailcontroller = TextEditingController();
 
-  final TextEditingController _passwordcontroller = TextEditingController();
-
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
@@ -21,7 +19,8 @@ class ForgetPasswordScreen extends StatelessWidget {
 
             children: [
               IconButton(
-                onPressed: () => Get.back(),
+                onPressed: () => Get.back(), // ✔ يعمل
+
                 icon: Icon(
                   Icons.arrow_back_ios,
                   color: isDark ? Colors.white : Colors.black,
@@ -104,7 +103,7 @@ class ForgetPasswordScreen extends StatelessWidget {
         ),
         actions: [
           TextButton(
-            onPressed: () => Get.back(),
+            onPressed: () => Get.back(), // ✔ يعمل
             child: Text(
               'Ok',
               style: AppTextst.withColor(
