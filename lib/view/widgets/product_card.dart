@@ -73,7 +73,7 @@ class productCard extends StatelessWidget {
                     ),
                     //discount text
                     child: Text(
-                      '${calculateDiscount(product.price, product.oldprice)}',
+                      '${calculateDiscount(product.price, product.oldprice)}% OFF',
 
                       style: AppTextst.withColor(
                         AppTextst.withWeight(

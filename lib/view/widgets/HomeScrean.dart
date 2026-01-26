@@ -1,9 +1,12 @@
 import 'package:e_commerce_app_ui/controllers/theme_controllers.dart';
+import 'package:e_commerce_app_ui/view/widgets/cart_screen.dart';
 import 'package:e_commerce_app_ui/view/widgets/category_chips.dart';
 import 'package:e_commerce_app_ui/view/widgets/custom_saerch_bar.dart';
 import 'package:e_commerce_app_ui/view/widgets/product_grid.dart';
 import 'package:e_commerce_app_ui/view/widgets/sele_banner.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/get_navigation.dart';
 import 'package:get/get_state_manager/src/simple/get_state.dart';
 // import 'package:get/utils.dart';
 
@@ -51,7 +54,7 @@ class Homescrean extends StatelessWidget {
                   ),
                   //cart button
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () => Get.to(() => CartScreen()),
                     icon: Icon(Icons.shopping_bag_outlined),
                   ),
                   //theme button

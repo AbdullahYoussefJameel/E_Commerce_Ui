@@ -1,12 +1,10 @@
 import 'package:e_commerce_app_ui/modles/product.dart';
 import 'package:e_commerce_app_ui/utils/app_textst.dart';
 import 'package:e_commerce_app_ui/view/widgets/all-products-screen.dart';
-import 'package:e_commerce_app_ui/view/widgets/product_card.dart';
 import 'package:e_commerce_app_ui/view/widgets/size_selector.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:get/get_utils/get_utils.dart';
 import 'package:share_plus/share_plus.dart';
 
 class ProductDetailsScreen extends StatelessWidget {
@@ -97,7 +95,7 @@ class ProductDetailsScreen extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        '\$${prodeuct.price.toStringAsFixed(2)}',
+                        '\$${prodeuct.price.toStringAsFixed(2)} ',
                         style: AppTextst.withColor(
                           AppTextst.h2,
                           Theme.of(context).textTheme.headlineMedium!.color!,
