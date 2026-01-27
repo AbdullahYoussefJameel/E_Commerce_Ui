@@ -1,3 +1,4 @@
+import 'package:e_commerce_app_ui/controllers/features/notifications/view/notifications-screen.dart';
 import 'package:e_commerce_app_ui/controllers/theme_controllers.dart';
 import 'package:e_commerce_app_ui/view/widgets/cart_screen.dart';
 import 'package:e_commerce_app_ui/view/widgets/category_chips.dart';
@@ -49,7 +50,7 @@ class Homescrean extends StatelessWidget {
                   Spacer(),
                   //noification icon
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () => Get.to(() => NotificationsScreen()),
                     icon: Icon(Icons.notifications_outlined),
                   ),
                   //cart button
