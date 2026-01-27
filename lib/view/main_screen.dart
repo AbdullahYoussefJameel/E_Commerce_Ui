@@ -3,7 +3,7 @@ import 'package:e_commerce_app_ui/view/navigation_controller.dart';
 import 'package:e_commerce_app_ui/view/widgets/AccountScreen.dart';
 import 'package:e_commerce_app_ui/view/widgets/HomeScrean.dart';
 import 'package:e_commerce_app_ui/view/widgets/ShoppingScreen.dart';
-import 'package:e_commerce_app_ui/view/widgets/WishListScreen.dart';
+import 'package:e_commerce_app_ui/view/widgets/wishlist_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:get/instance_manager.dart';
