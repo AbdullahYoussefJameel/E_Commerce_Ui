@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 enum NotificationsType { order, deliverd, promo, payment }
 
 class NotificationsItem {

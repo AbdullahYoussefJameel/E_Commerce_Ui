@@ -1,4 +1,5 @@
 import 'package:e_commerce_app_ui/controllers/auth_controller.dart';
+import 'package:e_commerce_app_ui/controllers/features/notifications/modles/myorder/view/widgets/my_order_screen.dart';
 import 'package:e_commerce_app_ui/utils/app_textst.dart';
 import 'package:e_commerce_app_ui/view/widgets/settings_screen.dart';
 import 'package:e_commerce_app_ui/view/widgets/signin_screen.dart';
@@ -149,6 +150,7 @@ class Accountscreen extends StatelessWidget {
                 if (item['title'] == 'Logout') {
                   _showLogoutDialog(context);
                 } else if (item['title'] == 'My Orders') {
+                  Get.to(() => MyOrderScreen());
                   //navigation to my orders screen
                 } else if (item['title'] == 'Shopping Add') {
                   //navigation to shopping add screen
