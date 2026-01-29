@@ -1,5 +1,6 @@
 import 'package:e_commerce_app_ui/controllers/auth_controller.dart';
 import 'package:e_commerce_app_ui/controllers/features/editprofile/screens/edit_profile_screen.dart';
+import 'package:e_commerce_app_ui/controllers/features/hellp%20center/views/screens/help_center_screen.dart';
 import 'package:e_commerce_app_ui/controllers/features/notifications/modles/myorder/view/widgets/my_order_screen.dart';
 import 'package:e_commerce_app_ui/controllers/features/notifications/shopping%20adress/shopping_adress_screen.dart';
 import 'package:e_commerce_app_ui/utils/app_textst.dart';
@@ -155,6 +156,7 @@ class Accountscreen extends StatelessWidget {
                   Get.to(() => ShoppingAdressScreen());
                 } else if (item["title"] == "Help Center") {
                   // TODO: Navigate to Help Center
+                  Get.to(() => HelpCenterScreen());
                 }
               },
             ),
