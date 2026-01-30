@@ -1,3 +1,4 @@
+import 'package:e_commerce_app_ui/controllers/features/ckeckout/screens/chackout_screen.dart';
 import 'package:e_commerce_app_ui/modles/product.dart';
 import 'package:e_commerce_app_ui/utils/app_textst.dart';
 import 'package:flutter/material.dart';
@@ -298,9 +299,7 @@ class CartScreen extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {
-                //navigate to checkout screen
-              },
+              onPressed: () => Get.to(() => ChackoutScreen()),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Theme.of(context).primaryColor,
                 padding: const EdgeInsets.symmetric(vertical: 16),
