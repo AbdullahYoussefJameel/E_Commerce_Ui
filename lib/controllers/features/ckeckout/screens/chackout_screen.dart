@@ -53,7 +53,12 @@ class ChackoutScreen extends StatelessWidget {
           //generate a roandom order number (in real app )
           final orderNumber =
               'ORD${DateTime.now().millisecondsSinceEpoch.toString().substring(7)}';
-          Get.to(() => OrderConfirmationScreen());
+          Get.to(
+            () => OrderConfirmationScreen(
+              orderNumber: orderNumber,
+              totalAoumt: 643.93,
+            ),
+          );
         },
       ),
     );

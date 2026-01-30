@@ -36,7 +36,7 @@ class CheckoutBottomBar extends StatelessWidget {
               borderRadius: BorderRadius.circular(12),
             ),
           ),
-          onPressed: () {},
+          onPressed: onPlaceOrder,
           child: Text(
             'Place Order (\$${totalAmount.toStringAsFixed(2)})',
             style: AppTextst.withColor(AppTextst.buttonmedium, Colors.white),
